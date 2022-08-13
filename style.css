@@ -37,3 +37,22 @@ body{
     font-size: 50px;
     margin-right: 25px;
 }
+
+.container.cntnr-body{
+    margin: 0px;
+    padding:0px;
+    min-width: 100%;
+}
+
+.row{
+    margin: 0px;
+    padding: 0px;
+    color:#fff;
+    background: #332e2b;
+    text-align: center;
+}
+.row p{
+    font-size: 30px;
+    font-family: 'Geo';
+    padding: 50px;
+}
