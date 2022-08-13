@@ -1,25 +1,39 @@
 body{
     width:100%;
     height:100%;
+    margin:0px;
+    padding: 0px;
 }
 
 .navbar{
-    background: #990000;
+    background: #332e2b;
 }
 
 .navbar-brand {
     width:200px;
     height:80px;
+    filter: invert(100%);
 }
 
 .container.header{
+    font-family: 'Geo';
     width:100%;
-    height:580px;
+    height:700px;
     margin:0px;
     padding:0px;
-    background-image: url("C:/Users/Nasam/Downloads/babymetalbg.jpg");
+    background-image: url("Soen.webp");
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
 }
 
-.container.header h3{
-    color:aliceblue;
+.container.header h1{
+    color:#fff;
+    font-size: 100px;
+    margin-right: 25px;
+}
+.container.header h4{
+    color:#fff;
+    font-size: 50px;
+    margin-right: 25px;
 }
