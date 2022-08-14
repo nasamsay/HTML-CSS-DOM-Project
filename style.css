@@ -75,3 +75,40 @@ body{
     font-family: 'Geo';
     font-size: 75px;
 }
+
+.container.messages h1{
+    min-width: 100%;
+    color:#fff;
+    text-align: center;
+    font-family: 'Geo';
+    font-size: 75px;
+}
+
+.container.messages.row{
+    min-width: 100%;
+}
+
+.msg-form #input{
+    width:600px;
+    height: 200px;
+}
+
+input::placeholder{
+    position: fixed;
+    font-family: 'Geo';
+}
+
+.msgs{
+    background: #5c302d;
+    width:600px;
+    height:400px;
+    font-family: 'Geo';
+}
+
+h3{
+    font-family: 'Geo';
+}
+
+ul{
+    list-style-type: none;
+}
