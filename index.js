@@ -1,13 +1,19 @@
+//alert function
+const name =prompt('Enter your name please:')
+alert(`Hello, ${name}!`)
+
+
 //function that grabs the input
 //const textMessage = document.getElementById('input').innerText;
 const message = document.forms['msg-form']
-const list = document.getElementById('messages-list')
+let list = document.getElementById('messages-list')
 message.addEventListener('submit', (e) =>{
     if (e.target.id =='submit'){
         let textMessage = message.querySelector('input[type="text"]').value;
         console.log(textMessage)
-        const entry= document.createElement('li')
+        let entry= list.createElement('li')
         entry.innerText = textMessage
+        console.log(entry)
         list.appendChild(entry)
         //console.log(textMessage)
     }
@@ -30,7 +36,7 @@ buttons.addEventListener('click', (e)=>{
     else if(e.target.innerText=='10$'){
         total+=10;
     }
-    else{
+    else if (e.target.innerText=='50$'){
         total+=50;
     }
     console.log(total)
@@ -38,7 +44,11 @@ buttons.addEventListener('click', (e)=>{
 
 })
 
-const additionalDonate = Number(btns.querySelector('input[type="text"]').value)
-buttons.addEventListener('enter', (e)=>{
-    
+buttons.addEventListener('keypress', (e)=>{
+    if(e.key =='Enter'){
+        const additionalDonate = Number(buttons.querySelector('input[type="text"]').value)
+        console.log(additionalDonate)
+        total += additionalDonate
+        document.querySelector('#total').innerText =total
+    }
 })
