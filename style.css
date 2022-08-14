@@ -38,6 +38,10 @@ body{
     margin-right: 25px;
 }
 
+.container{
+    min-width: 100%;
+    background: #332e2b;
+}
 .container.cntnr-body{
     margin: 0px;
     padding:0px;
@@ -51,8 +55,23 @@ body{
     background: #332e2b;
     text-align: center;
 }
-.row p{
+.container.cntnr-body.row p{
     font-size: 30px;
     font-family: 'Geo';
     padding: 50px;
+}
+
+.card.card-body{
+    background:#5c302d ;
+}
+.card.card-body.card-text{
+    font-family: 'Geo';
+}
+
+.container.albums h1{
+    min-width: 100%;
+    color:#fff;
+    text-align: center;
+    font-family: 'Geo';
+    font-size: 75px;
 }
