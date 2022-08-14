@@ -50,5 +50,6 @@ buttons.addEventListener('keypress', (e)=>{
         console.log(additionalDonate)
         total += additionalDonate
         document.querySelector('#total').innerText =total
+        buttons.querySelector('input[type="text"]').value=''
     }
 })
