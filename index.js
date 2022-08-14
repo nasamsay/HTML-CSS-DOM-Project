@@ -5,17 +5,17 @@ alert(`Hello, ${name}!`)
 
 //function that grabs the input
 //const textMessage = document.getElementById('input').innerText;
-const message = document.forms['msg-form']
-let list = document.getElementById('messages-list')
-message.addEventListener('submit', (e) =>{
+const message = document.querySelector('#msg-form')
+let list = document.querySelector('#messages-list')
+message.addEventListener('click', (e) =>{
     if (e.target.id =='submit'){
         let textMessage = message.querySelector('input[type="text"]').value;
         console.log(textMessage)
-        let entry= list.createElement('li')
+        const entry= document.createElement('li')
         entry.innerText = textMessage
         console.log(entry)
         list.appendChild(entry)
-        //console.log(textMessage)
+        message.querySelector('input[type="text"]').value =''
     }
 })
 
